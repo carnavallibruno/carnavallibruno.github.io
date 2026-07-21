@@ -5,18 +5,19 @@ import { Briefcase, Calendar, CheckCircle2 } from "lucide-react";
 
 const experiences = [
   {
-    title: "Fullstack Developer",
+    title: "Fullstack Engineer",
     company: "DBServices Portugal",
     period: "Nov 2025 – Present",
     location: "Remote",
     highlights: [
-      "Building modern web applications using React and NestJS for Todeschini, a major Brazilian client",
-      "Developing scalable fullstack solutions with TypeScript across the entire stack",
-      "Collaborating with international teams to deliver high-quality software products",
+      "Refactored the entire permission and security layer of a production application, resolving critical access control discrepancies",
+      "Designed and executed database schema migrations to support evolving application features while ensuring data integrity",
+      "Built an AI-powered rendering feature enabling real-time visualization from user-uploaded images",
+      "Integrated the platform with an external ERP system (Focco Lojas) for seamless store-operations data sync",
     ],
   },
   {
-    title: "Fullstack Developer",
+    title: "Front-End Developer",
     company: "Compass.UOL",
     period: "Nov 2022 – Nov 2025",
     location: "Remote",
@@ -90,7 +91,9 @@ export function ExperienceSection() {
                 <div className="p-8 rounded-2xl glass glass-hover">
                   <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
                     <div>
-                      <h3 className="text-xl font-bold text-foreground">{exp.title}</h3>
+                      <h3 className="text-xl font-bold text-foreground">
+                        {exp.title}
+                      </h3>
                       <p className="text-primary font-medium">{exp.company}</p>
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
@@ -108,7 +111,9 @@ export function ExperienceSection() {
                         transition={{ duration: 0.3, delay: 0.4 + i * 0.05 }}
                       >
                         <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{highlight}</span>
+                        <span className="text-muted-foreground">
+                          {highlight}
+                        </span>
                       </motion.li>
                     ))}
                   </ul>
@@ -137,10 +142,16 @@ export function ExperienceSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">{edu.degree}</h4>
-                    <p className="text-sm text-muted-foreground mb-2">{edu.school}</p>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {edu.school}
+                    </p>
                     <div className="flex items-center gap-4 text-sm">
-                      <span className="text-muted-foreground">{edu.period}</span>
-                      <span className="text-primary font-medium">Grade: {edu.grade}</span>
+                      <span className="text-muted-foreground">
+                        {edu.period}
+                      </span>
+                      <span className="text-primary font-medium">
+                        Grade: {edu.grade}
+                      </span>
                     </div>
                   </div>
                 </div>

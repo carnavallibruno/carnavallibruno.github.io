@@ -54,25 +54,36 @@ export function AboutSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                I'm a Fullstack Developer with over 3 years of professional experience, 
-                currently working at <span className="text-foreground font-medium">DBServices Portugal</span> where 
-                I'm building modern applications with React and NestJS for <span className="text-primary">Todeschini</span>. 
-                Previously at Compass.UOL, I contributed to major projects for clients like 
-                <span className="text-primary"> Yamaha USA</span>, <span className="text-primary">AWS</span>, 
-                and <span className="text-primary">Enerpac</span>.
+                I'm a Software Engineer with over 4 years of professional
+                experience, currently working at{" "}
+                <span className="text-foreground font-medium">
+                  DBServices Portugal
+                </span>{" "}
+                where I'm building modern applications with React and NestJS for{" "}
+                <span className="text-primary">Todeschini</span>. Previously at
+                Compass.UOL, I contributed to major projects for clients like
+                <span className="text-primary"> Yamaha USA</span>,{" "}
+                <span className="text-primary">AWS</span>, and{" "}
+                <span className="text-primary">Enerpac</span>.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                My passion lies in creating high-performance, user-centric web applications. 
-                I specialize in <span className="text-foreground font-medium">React</span>, 
-                <span className="text-foreground font-medium"> Next.js</span>, 
-                <span className="text-foreground font-medium"> NestJS</span>, and 
-                <span className="text-foreground font-medium"> Node.js</span>, with a strong 
-                foundation in Test-Driven Development and CI/CD practices.
+                My passion lies in creating high-performance, user-centric web
+                applications. I specialize in{" "}
+                <span className="text-foreground font-medium">React</span>,
+                <span className="text-foreground font-medium"> Next.js</span>,
+                <span className="text-foreground font-medium"> NestJS</span>,
+                <span className="text-foreground font-medium"> Node.js</span>,
+                and
+                <span className="text-foreground font-medium"> SQL</span> with a
+                strong foundation in Test-Driven Development and CI/CD
+                practices.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Beyond coding, I'm an active mentor and educator, having trained 150+ developers 
-                through Compass.UOL's internship programs and delivered technical workshops to 
-                audiences of 1,000+ professionals.
+                Beyond coding, I'm an active mentor and educator, having trained
+                150+ developers through internship programs and delivered
+                technical workshops to audiences of 1,000+ professionals. I'm
+                also an avid gamer, and long-term I'd love to bring my
+                engineering background into the games industry.
               </p>
             </motion.div>
 
@@ -94,7 +105,9 @@ export function AboutSection() {
                 >
                   <item.icon className="h-8 w-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-1">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {item.description}
+                  </p>
                 </motion.div>
               ))}
             </motion.div>

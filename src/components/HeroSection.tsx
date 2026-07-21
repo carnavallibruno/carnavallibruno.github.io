@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Sparkles } from "lucide-react";
 import profileImage from "@/assets/profile.jpg";
+import resumePdf from "@/assets/Bruno_Carnavalli_Software_Engineer.pdf";
 
 export function HeroSection() {
   return (
@@ -41,7 +42,9 @@ export function HeroSection() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6"
             >
               <Sparkles className="h-4 w-4 text-primary" />
-              <span className="text-sm text-muted-foreground">Available for new opportunities</span>
+              <span className="text-sm text-muted-foreground">
+                Available for new opportunities
+              </span>
             </motion.div>
 
             <motion.h1
@@ -50,8 +53,7 @@ export function HeroSection() {
               transition={{ delay: 0.3 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
             >
-              Hi, I'm{" "}
-              <span className="glow-text">Bruno</span>
+              Hi, I'm <span className="glow-text">Bruno</span>
             </motion.h1>
 
             <motion.h2
@@ -69,8 +71,9 @@ export function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-lg text-muted-foreground max-w-xl mb-8"
             >
-              Building high-performance web experiences with React, Next.js, and Node.js. 
-              AWS certified with a passion for clean code and exceptional user experiences.
+              Building high-performance web experiences with React, Next.js, and
+              Node.js. AWS certified with a passion for clean code and
+              exceptional user experiences.
             </motion.p>
 
             <motion.div
@@ -88,7 +91,10 @@ export function HeroSection() {
                 Let's Talk
               </motion.a>
               <motion.a
-                href="#experience"
+                href={resumePdf}
+                download="Bruno_Carnavalli_Software_Engineer.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg glass glass-hover font-medium"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -112,7 +118,11 @@ export function HeroSection() {
                 animate={{
                   scale: [1, 1.1, 1],
                 }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               />
               <motion.div
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden glow-border"

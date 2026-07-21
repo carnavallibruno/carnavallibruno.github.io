@@ -5,11 +5,29 @@ import { useRef } from "react";
 const skillCategories = [
   {
     title: "Front-End",
-    skills: ["React", "Next.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "TailwindCSS", "Web Components"],
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "TailwindCSS",
+      "Web Components",
+    ],
   },
   {
     title: "Back-End & APIs",
-    skills: ["Node.js", "Python", "NestJS", "GraphQL", "REST APIs", "PostgreSQL", "MongoDB"],
+    skills: [
+      "Node.js",
+      "Python",
+      "NestJS",
+      "GraphQL",
+      "REST APIs",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+    ],
   },
   {
     title: "Cloud & Infrastructure",
